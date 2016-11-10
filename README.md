@@ -1,11 +1,6 @@
-check_http_yaml
-===============
+check_http_statusfile
+=====================
 
-Nagios/Icinga check plugin to get yaml data via http and check the value of a key-value pair.
-Requires the servers response header to have "Content-Type: *yaml*".
+python check_http_statusfile.py http my-host.local 9000 /status
 
-EXAMPLE:
-
-python check_http_yaml.py icinga-host.local 9000 /icinga-status?query=STATUSFILEAGETT STATUSFILEAGETT
-
-OK - value: 3|statusfileagett=3
+OK - everything seems to be fine
